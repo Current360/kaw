@@ -141,6 +141,12 @@ http://capistranorb.com/documentation/getting-started/cold-start/
 
 should be able to run
 cap production git:check
+    {
+        if you get an error 'agent has no identities'
+
+        in terminal on local machine
+        -run   ssh-add
+    }
 
 
 Creating Agent Forwarding
