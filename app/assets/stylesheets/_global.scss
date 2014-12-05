@@ -21,6 +21,10 @@ $tablet: new-breakpoint(min-width 48em); // 768px
 $laptop: new-breakpoint(min-width 64em); // 1024px
 $large: new-breakpoint(min-width 87.5em); // 1400px
 
+
+//1150 Culture Cutoff
+$culture: new-breakpoint(min-width 71.875em 6);
+
 /* ---------------------------
 
 		LAYOUT

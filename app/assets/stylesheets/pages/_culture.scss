@@ -1,0 +1,102 @@
+/* -----------------------------
+
+      CULTURE PAGE STYLES
+
+----------------------------- */
+.wrapper {
+  @include outer-container;
+  .culture-text {
+    background: #fff;
+    @include pad(10em 10%);
+    float: left;
+    @include media($tablet) {
+      width: 80%;
+    }
+    @include media($laptop) {
+      width: 70%;
+    }
+    @include media($culture) {
+
+      width: 60%;
+    }
+  }
+  .culture-pic {
+    margin: 4em 0 4em -25%;
+    width: 150%;
+  }
+  .culture-sidebar {
+    float: right;
+    padding: 10% 0 0 0;
+    @include media($tablet) {
+      width: 20%;
+    }
+    @include media($laptop) {
+      width: 30%;
+    }
+    @include media($culture) {
+      width: 40%;
+    }
+  }
+  .social-feed {
+    background: #202020;
+    padding-bottom: 9.375em;
+    margin-bottom: 20em;
+    position: relative;
+    ul {
+      @include fill-parent;
+      clear: both;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      @include media($culture) {
+        float: left;
+        width: 50%;
+      }
+      &:before {
+        display: none;
+      }
+    }
+    img {
+      @include fill-parent;
+      position: relative;
+    }
+    span {
+      @include fill-parent;
+      opacity: 0;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      display: none;
+      }
+    .button {
+      color: #fff;
+      bottom: 0;
+      margin: 0 0 3.25em 11.250em;
+      position: absolute;
+    }
+  }
+  #culture-recent-posts {
+      width: 75%;
+    }
+  article.recent-posts {
+    header {
+      background: #202020;
+      height: 7.188em;
+      padding: 2.5em 4em;
+    }
+    h2 {
+      color: #f14e1e;
+      font-size: 1.206em;
+      text-transform: uppercase;
+    }
+  }
+}

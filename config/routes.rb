@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :bios
+
   match '/contact' => 'pages#contact', via: [:get]
   match '/culture' => 'pages#culture', via: [:get]
   match '/work' => 'pages#work', via: [:get]

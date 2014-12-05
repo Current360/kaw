@@ -42,5 +42,12 @@ gem 'capistrano-rails', group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# LAYOUT RELATED GEMS
 gem 'bourbon'
 gem 'neat'
+
+
+# Instagram Feed
+gem 'instagram'
+# Dribbble Feed
+gem 'swish'
