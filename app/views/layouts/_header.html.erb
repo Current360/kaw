@@ -1,0 +1,23 @@
+<header id="top" role="banner">
+    <%= link_to('Current360', root_path, :class => 'mobile-header-logo') %>
+    <a href="#nav" id="toggle">Menu<span class="arrow"></span></a>
+</header>
+<nav id="nav" role="navigation">
+
+    <a href="#" id="close">Close<span class="arrow"></span></a>
+
+    <ul class="no-disc">
+        <li><%= link_to 'Home', root_path, :class => 'home-link' %></li>
+        <li><%= link_to 'Work', work_path %></li>
+        <li><%# link_to 'Blog', blog_path %><a href="#">Blog</a></li>
+        <li><%= link_to 'Culture', culture_path %></a></li>
+    </ul>
+
+    <form action="" class="search">
+        <input type="text">
+        <input type="submit" value="Search Current360">
+    </form>
+
+    <%= link_to 'Contact', contact_path, :class => "contact-link" %>
+
+</nav>

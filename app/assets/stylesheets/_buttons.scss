@@ -1,0 +1,23 @@
+/* BUTTON BEHAVIOR NOTES */
+/* BUTTON HOVER BG COLOR IS STROKE COLOR */
+.button {
+    @include transition(all 0.2s ease-in-out);
+
+    border-radius: 4px;
+    border: 3px solid $text;
+    display: inline-block;
+    min-height: 45px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 200px;
+    }
+    .button:hover {
+        background: $text;
+        color: white;
+    }
+    .button:active, .button:focus {
+        background: $headers;
+    }
+    .button:focus { color: white; }

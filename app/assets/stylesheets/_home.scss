@@ -1,0 +1,199 @@
+main.home {
+    blockquote {
+        border: 0;
+        color: $text;
+        margin: 0 auto;
+        padding: 0 2em;
+        text-align: center;
+    }
+    blockquote:before { text-align: left; }
+}
+
+.intro-copy {
+    background: asset-url("bg/c360.png", image);
+    background-attachment: fixed;
+    background-color: $darkgrey;
+    background-position: right 90px;
+    background-repeat: no-repeat;
+    background-size: 320px 185px;
+    min-height: 275px;
+    padding: 2em 0 0 0;
+    text-align: center;
+    p {
+        color: white;
+        margin: 0 auto;
+    }
+}
+
+.silo-list {
+    margin: 0 5%;
+    li {
+    display: block;
+    float: left;
+    height: auto;
+    width: 33.3%;
+    }
+    a {
+        background: $headers;
+        display: block;
+        font-size: 0;
+        height: inherit;
+        line-height: 93px;
+        height: 93px;
+        }
+        a:hover {
+            background: $links;
+            font-size: 100%;
+        }
+}
+
+.featured-blog {
+    background: white;
+    margin: 1em 5% 0 5%;
+    padding: 2em 1em;
+    h2, h3 {
+        text-align: center;
+    }
+    h2 {
+        color: $headers;
+        font-family: 'Arvo', serif;
+        font-size: 100%;
+        text-transform: none;
+    }
+    h3 { font-size: 0.875em; }
+    figure {
+        margin: 3em 0 1.5em 0;
+    }
+    img {
+        display: block;
+        border-radius: 60px;
+        margin: 0 auto;
+        max-width: 120px;
+    }
+    p { font-size: 100%; }
+    .button {
+        border-color: $links;
+        color: $text;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        }
+        .button:hover {
+            color: white;
+        }
+        .button:active { color: white; }
+}
+
+.case-study {
+    background: black;
+    margin: 0 5% 3em 5%;
+    padding: 3em 0 3.5em 0;
+
+    h2, h3 {
+        text-align: center;
+    }
+    h2 {
+        color: $headers;
+        font-size: 0.875em;
+    }
+    h3 {
+        color: white;
+        font-size: 1.375em;
+        letter-spacing: 3px;
+        margin: 2em 0 0 0;
+
+    }
+
+    blockquote {
+        border: 0;
+        color: white;
+        margin: 0 auto 1.5em 0;
+        padding: 0 2em;
+        text-align: center;
+        }
+        blockquote:before { text-align: left; }
+    cite { color: white; }
+    .button {
+        border-color: $links;
+        color: white;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+
+.culture {
+    clear: both;
+    margin: 0 5% 2em 5%;
+    h4, h5 {
+        font-size: 0.875em;
+        text-align: center;
+    }
+    li {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    li a {
+        display: block;
+        padding: 0;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+    article {
+        background: $links;
+        clear: both;
+        padding: 2em 0;
+    }
+    a { color: white; }
+    .button {
+        display: block;
+        margin: 1.5em auto 0 auto;
+        width: 200px;
+    }
+}
+
+.home-newsletter {
+    background:$darkgrey;
+    clear: both;
+    padding: 4em 0;
+    margin: 0 0 2.5em 0;
+    h3, label { color: white; }
+    h3 {
+        font-size: 1.3em;
+        font-weight: normal;
+        letter-spacing: 5px;
+        margin-bottom: 1.25em;
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 3em;
+        text-align: center;
+        text-transform: none;
+    }
+    fieldset {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+    input[type="email"] {
+        background: $lightgrey;
+        float: left;
+        margin-bottom: 0;
+        max-width: 245px;
+    }
+
+     input[type="submit"] {
+        background: $links;
+        border: none;
+        border-radius: 0;
+        float: left;
+        height: auto;
+        margin: 0;
+        min-width: initial;
+        width: 48px;
+     }
+}

@@ -2,13 +2,31 @@
 <html>
 <head>
   <title>Kaw</title>
+  <script type="text/javascript">
+         WebFontConfig = {
+           google: { families: [ 'Arvo:400,400italic:latin', 'Open+Sans:400italic,400,300,700:latin' ] }
+         };
+         (function() {
+           var wf = document.createElement('script');
+           wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+             '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+           wf.type = 'text/javascript';
+           wf.async = 'true';
+           var s = document.getElementsByTagName('script')[0];
+           s.parentNode.insertBefore(wf, s);
+         })(); </script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body class="<%= controller.controller_name %>">
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+            <%= render 'layouts/header' %>
+            <%= yield %>
+            <%= render 'layouts/footer' %>
+        </div>
+    </div>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>

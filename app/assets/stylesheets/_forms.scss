@@ -1,0 +1,101 @@
+
+/* ----------- LABELS ----------------- */
+
+label {
+	color: $text;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.75em;
+	margin: 0 0 0.75em 1.3275em;;
+	text-transform: uppercase;
+}
+
+/* ----------- TEXT FIELDS ----------------- */
+input:focus {
+	outline: none;
+}
+input[type="text"], input[type="email"] {
+	@include transition(all 0.2s ease-in-out);
+	border: 2px solid $mediumgrey;
+	color: $text;
+	display: block;
+	height: 48px;
+	font-size: 0.875em;
+	outline: none;
+	margin-bottom: 2.9125em;
+	min-width: 224px;
+	text-indent: 8px;
+	width: 100%;
+	}
+	input[type="text"]:hover, textarea:hover, input[type="text"]:hover {
+		border-color: shade($mediumgrey, 20%);
+	}
+	input[type="text"]:focus, textarea:focus, input[type="text"]:focus {
+		background: $lightgrey;
+		border-color: shade($mediumgrey, 20%);
+	}
+
+textarea {
+	@include transition(all 0.2s ease-in-out);
+	border: 2px solid $mediumgrey;
+	min-height: 144px;
+	min-width: 224px;
+	outline: none;
+	width: 100%;
+}
+
+/* ----------- SUBMIT BUTTON ----------------- */
+
+input[type="submit"] {
+		@include transition(all 0.2s ease-in-out);
+		background: transparent;
+		border-radius: 4px;
+		border: 3px solid $submit;
+		display: block;
+		font-size: 1em;
+		margin: 2em auto;
+		min-height: 48px;
+		min-width: 200px;
+		outline: none;
+		text-transform: uppercase;
+	}
+	input[type="submit"]:hover {
+		background: $submit;
+		cursor: pointer;
+	}
+	input[type="submit"]:active, input[type="submit"]:focus {
+		background: $submit;
+		border-color: shade($submit, 20%);
+		color: white;
+	}
+
+
+/* ----------- CHECKBOXES & RADIOS----------------- */
+input[type="checkbox"], input[type="radio"] {
+	display: none;
+}
+
+.checkbox-label:before, .radio-label:before {
+	border: 2px solid $mediumgrey;
+
+	content: '';
+	display: inline-block;
+
+	height: 12px;
+	width: 12px;
+}
+
+input[type="checkbox"]:checked + .checkbox-label:before {
+	background: $lightgrey;
+	content: "\2713";
+	color: $text;
+	font-size: 1.5em;
+	height: 12px;
+	width: 12px;
+
+}
+
+.radio-label:before {
+	border-radius: 6px;
+}
+

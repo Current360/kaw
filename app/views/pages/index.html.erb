@@ -1,1 +1,44 @@
-<h1>c360</h1>
+<main class="home">
+    <div class="intro-copy">
+        <h1>Integrated Marketing, Branding, &amp; Strategy&nbsp;Services</h1>
+        <p>Integrated <a href="#">marketing</a>, branding and <a href="">strategy</a> services from a <a href="">team</a> you'll love working with. We do that.</p>
+    </div>
+    <ul class="no-disc silo-list">
+        <li><a href="#">Banking &amp; Financial</a></li>
+        <li><a href="#">Adult Beverages</a></li>
+        <li><a href="#">Casual Dining</a></li>
+        <li><a href="#">Healthcare</a></li>
+        <li><a href="#">High Impact Retail</a></li>
+        <li><a href="#">Home Improvement</a></li>
+        <li><a href="#">Pet Care</a></li>
+        <li><a href="#">Philanthropic</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Fitness &amp; Wellness</a></li>
+        <li><a href="#">Festivals &amp; Events</a></li>
+        <li><a href="#">Other</a></li>
+    </ul>
+    <br class="clear">
+    <blockquote>
+        Working with Current360 has evolved into being the highlight of my own job. They make me look good.
+        <cite>John Doe, Doe Enterprises</cite>
+    </blockquote>
+</main>
+
+<!-- import single featured blog -->
+<%= render 'pages/home/blog' %>
+
+<!-- import Case study -->
+<%= render 'pages/home/casestudy' %>
+
+<!-- import Culture -->
+<%= render 'pages/home/culture' %>
+
+<form action="" class="home-newsletter">
+    <h3>Want the Skinny?</h3>
+    <label for='newsletter'>Sign up for our newsletter.</label>
+    <fieldset>
+        <input type="email" name="newsletter" id="newsletter" placeholder="Your email here.">
+        <input type="submit" value="GO">
+    </fieldset>
+    <br class="clear">
+</form>

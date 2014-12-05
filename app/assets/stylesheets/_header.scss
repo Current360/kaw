@@ -1,0 +1,56 @@
+header {
+    background: $text;
+    min-height: 72px;
+
+    #toggle, .arrrow {
+        @include media($laptop) {
+            height: 0;
+            overflow: hidden;
+            width: 0;
+        }
+
+        @include hide-text;
+        background: asset-url("icons/burger.png", image);
+        background-color: $links;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 22px 20px;
+        display: block;
+        float: left;
+        height: 72px;
+        position: absolute;
+        top: 0;
+        width: 72px;
+
+        span {
+            @include triangle(6px, $text, right);
+            position: absolute;
+            left: 70%;
+            top: 46%;
+        }
+    }
+
+    .mobile-header-logo {
+        @include hide-text;
+        background: asset-url("logos/c360-mobile-logo.png", image);
+
+        display: block;
+        height: 44px;
+        margin: 0 auto;
+        position: relative;
+        top: 12px;
+        width: 56px;
+
+
+         @include media($laptop) {
+            height: 0;
+            overflow: hidden;
+            width: 0;
+        }
+    }
+}
+
+
+
+
+
