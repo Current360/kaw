@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  challenge: MyText
+  insight: MyText
+  solution: MyText
+  result: MyText
+  quote: MyText
+  client: MyString
+  slider1: MyString
+  slider2: MyString
+  slider3: MyString
+  slider4: MyString
+  slider5: MyString
+  inset1: MyString
+  inset2: MyString
+  inset3: MyString
+
+two:
+  title: MyString
+  challenge: MyText
+  insight: MyText
+  solution: MyText
+  result: MyText
+  quote: MyText
+  client: MyString
+  slider1: MyString
+  slider2: MyString
+  slider3: MyString
+  slider4: MyString
+  slider5: MyString
+  inset1: MyString
+  inset2: MyString
+  inset3: MyString
