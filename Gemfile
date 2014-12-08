@@ -51,3 +51,6 @@ gem 'neat'
 gem 'instagram'
 # Dribbble Feed
 gem 'swish'
+
+# User authentication
+gem 'devise'
