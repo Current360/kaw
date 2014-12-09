@@ -54,3 +54,6 @@ gem 'swish'
 
 # User authentication
 gem 'devise'
+
+# Seeds for blog posts
+gem 'betterlorem', '~> 0.1.2', group: :development

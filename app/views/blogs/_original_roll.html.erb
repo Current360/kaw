@@ -1,0 +1,32 @@
+<% @blogs.each do |blog| %>
+<article>
+  <!-- Write conditional for outputing a p.header or an h1 -->
+  <h2 class="blog-blog-header"><%= link_to blog.title, blog %></h1>
+  <figure>
+  <%# if blog.blog_picture.large.present? %>
+    <%# image_tag blog.blog_picture.large %><br>
+  <%# else %>
+    <img src="http://placehold.it/600x375" ><br>
+  <% #end %>
+  </figure>
+  <ul class="blog-blog-meta">
+    <li>
+      <p class="bold">Category</p>
+      <p>Write new category function
+        <%# blog.category.humanize %></p>
+    </li>
+    <li>
+      <p class="bold">Author</p>
+      <p>Write new author function
+        <%# link_to blog.author_lookup(blog.author), bio_path(blog.author) %><p>
+    </li>
+    <li>
+      <p class="bold">Written On</p>
+      <p>Write new timestamp function
+        <%# blog.timestamp %></p>
+    </li>
+  </ul>
+  <p><%= truncate(strip_tags(blog.content), length: 600) %></p>
+  <%= link_to 'Continue Reading', blog %>
+</article>
+<% end %>
