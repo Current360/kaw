@@ -1,0 +1,27 @@
+<div class='wrapper no-bg'>
+  <main class='blog-feed'>
+    <!-- <h1>Expert Marketing Blog</h1> -->
+    <section id="roll">
+      <% if @category.blank? %>
+        <%= render 'original_roll' %>
+        <%= will_paginate %>
+      <% end %>
+
+    </section>
+  </main>
+<% if user_signed_in? %>
+  <aside class='recent-posts form'>
+    <%= render 'form' %>
+    <br><br><br>
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+  </aside>
+<% else %>
+  <aside class='recent-posts'>
+    <%= render 'search' %>
+    <%= render 'category' %>
+    <%= render 'recent_posts' %>
+  </aside>
+<% end %>
+
+  <br class="clear">
+</div>
