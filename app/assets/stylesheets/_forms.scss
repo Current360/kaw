@@ -27,12 +27,14 @@ input[type="text"], input[type="email"] {
 	text-indent: 8px;
 	width: 100%;
 	}
-	input[type="text"]:hover, textarea:hover, input[type="text"]:hover {
+	input[type="text"]:hover, textarea:hover, input[type="email"]:hover {
 		border-color: shade($mediumgrey, 20%);
+		color: shade($text, 20%);
 	}
-	input[type="text"]:focus, textarea:focus, input[type="text"]:focus {
+	input[type="text"]:focus, textarea:focus, input[type="email"]:focus {
 		background: $lightgrey;
 		border-color: shade($mediumgrey, 20%);
+		color: shade($text, 20%);
 	}
 
 textarea {

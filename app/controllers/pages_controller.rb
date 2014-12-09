@@ -18,9 +18,12 @@ class PagesController < ApplicationController
         # logger.debug(@pictures)
     end
 
+    def life
+    end
+
     def contact
     end
 
-    def life
+    def strategy
     end
 end

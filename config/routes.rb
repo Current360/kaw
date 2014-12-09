@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
   devise_for :users
+  resources :blogs
   resources :bios
-
+  match '/strategy' => 'pages#strategy', via: [:get]
   match '/contact' => 'pages#contact', via: [:get]
   match '/culture' => 'pages#culture', via: [:get]
   match '/work' => 'pages#work', via: [:get]

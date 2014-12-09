@@ -1,0 +1,21 @@
+/* -----------------------------
+
+      CONTACT PAGE STYLES
+
+----------------------------- */
+.contact {
+  @include outer-container;
+  background: #404041;
+  min-height: 450px;
+  padding-top: 12%;
+  aside {
+    @include span-columns(3);
+  }
+  form {
+    @include span-columns(7);
+  }
+}
+iframe {
+  display: block;
+  @include outer-container;
+}
