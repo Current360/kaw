@@ -7,3 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 10.times { |i| Blog.create(title: "Post Test#{i}", content: BetterLorem.p(5, false, false), category: i, author: 8) }
+31.times { |i| Bio.create(first_name: "Current", last_name: "Employee#{i}", real_title: "Real Title#{i}", funny_title: "Funny Title#{i}", question1: "question1", question2: "question2", question3: "question3", question4: "question4", question5: "question5", answer1: "answer1", answer2: "answer2", answer3: "answer3", answer4: "answer4", answer5: "answer5", bio_pic: "", overview: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eum molestias reprehenderit repudiandae ut labore natus expedita magni a adipisci quas maiores, quis accusantium ea amet pariatur, ex repellendus asperiores.") }

@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
   resources :blogs
   resources :bios
+  # Load Featured Bio Area w/o reloading page
+  get '/update_featured' => 'bios#update_featured', as: 'update_featured'
   match '/strategy' => 'pages#strategy', via: [:get]
   match '/contact' => 'pages#contact', via: [:get]
   match '/culture' => 'pages#culture', via: [:get]

@@ -1,3 +1,93 @@
 // Place all the styles related to the bios controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper {
+  @include outer-container;
+}
+.bios main {
+  background: #fff;
+  float: left;
+  width: 70%;
+  article {
+    padding: 75px 10% 0 10%;
+  }
+}
+
+.full-bio {
+  background: #202020;
+  color: #fff;
+  float: left;
+  padding: 3%;
+  width: 30%;
+
+  p {
+    color: #fff;
+    font-size: 0.875em;
+    margin-top: 0;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.bio-name {
+  color: #fec133;
+  font-size: 2.5em;
+  font-weight: 100;
+  letter-spacing: initial;
+  margin: 0.375em 0;
+  text-transform: initial;
+  .last-name {
+    color: #fff;
+    font-size: .75em;
+  }
+}
+
+.titles {
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-right: 2px solid #dea92d;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.75em;
+    padding: 0 5px 0 0;
+    text-transform: uppercase;
+    }
+    li:last-child { border: none; }
+}
+
+.questions li {
+  color: #fff;
+  display: block;
+  font-size: 0.875em;
+  margin: 1.563em 0 0 0;
+  .question {
+    color: #fec130;
+    display: block;
+    text-transform: uppercase;
+  }
+}
+
+.bio-rows {
+  position: relative;
+
+  width: 100%;
+  div {
+    display: block;
+    float: left;
+    position: relative;
+
+  }
+}

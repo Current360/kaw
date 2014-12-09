@@ -1,0 +1,25 @@
+<section id="featured">
+  <% if @selected.blank? %>
+    <figure class="bio-pic">
+      <%# image_tag @featured.bio_pic.large_bio_pic %>
+    </figure>
+    <h2 class="bio-name">
+      <%= @featured.first_name %>
+      <span class="last-name"><%= @featured.last_name %></span>
+    </h2>
+    <ul class="titles">
+      <li><%= @featured.funny_title %></li>
+      <li><%= @featured.real_title %></li>
+    </ul>
+    <p><%= @featured.overview %></p>
+    <ul class="questions">
+      <li><span class="question"><%= @featured.question1 %></span><%= @featured.answer1 %></li>
+      <li><span class="question"><%= @featured.question2 %></span><%= @featured.answer2 %></li>
+      <li><span class="question"><%= @featured.question3 %></span><%= @featured.answer3 %></li>
+      <li><span class="question"><%= @featured.question4 %></span><%= @featured.answer4 %></li>
+      <li><span class="question"><%= @featured.question5 %></span><%= @featured.answer5 %></li>
+    </ul>
+  <% else %>
+    <%= render partial: 'update' %>
+  <% end  %>
+</section>

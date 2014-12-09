@@ -1,3 +1,25 @@
 <%= content_for :page_title, "Marketing Case Study Results | Current360's Work Portfolio" %>
 <%= content_for :description, "From traditional marketing and branding to in-house social, video and motion graphic capabilities, we offer a full range of services. Read our case studies." %>
-<h1>Need that Bio layout</h1>
+<section class="wrapper no-bg">
+  <main>
+    <article>
+      <h1>Team C360</h1>
+      <p>Yes, we’re ad nerds, but we have lives outside of work, too. (Most of us, anyway.) Among our staff you’ll find painters, writers, musicians, needle workers, skaters, gamers, beer geeks, improv comedians and zombie slayers. We think it’s a well-balanced crew.</p>
+      <%= link_to 'new bio', new_bio_path %>
+    </article>
+    <section class="bio-rows">
+      <% @bios.each do |bio| %>
+      <div>
+        <%= link_to bio.last_name,
+                    update_featured_path(:id => bio.id),
+                    :remote => true %>
+        <%= link_to 'edit', edit_bio_path(bio) %>
+      </div>
+      <% end %>
+    </section>
+  </main>
+  <aside class="full-bio">
+    <%= render partial: 'featured', locals: { featured: @featured } %>
+  </aside>
+  <br class="clear">
+</section>
