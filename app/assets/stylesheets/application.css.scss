@@ -25,9 +25,11 @@
 @import 'forms';
 @import 'footer';
 
-
-/* PAGES */
+/* STATIC PAGES */
 @import 'pages/home';
 @import 'pages/culture';
 @import 'pages/contact';
 @import 'pages/strategy';
+
+/* DYNAMIC PAGES */
+@import 'blogs';

@@ -4,7 +4,6 @@
     <section id="roll">
       <% if @category.blank? %>
         <%= render 'original_roll' %>
-        <%= will_paginate %>
       <% end %>
 
     </section>
@@ -17,9 +16,7 @@
   </aside>
 <% else %>
   <aside class='recent-posts'>
-    <%= render 'search' %>
-    <%= render 'category' %>
-    <%= render 'recent_posts' %>
+    <p>Need to Rewrite functions to display posts</p>
   </aside>
 <% end %>
 

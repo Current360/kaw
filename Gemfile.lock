@@ -32,6 +32,7 @@ GEM
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+    betterlorem (0.1.2)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bourbon (3.2.3)
@@ -182,6 +183,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
+  betterlorem (~> 0.1.2)
   binding_of_caller
   bourbon
   capistrano
