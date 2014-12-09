@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kaw</title>
+  <title><%= full_title(yield(:page_title)) %></title>
+  <meta name="description" content="<%= yield(:description) %>">
   <script type="text/javascript">
          WebFontConfig = {
            google: { families: [ 'Arvo:400,400italic:latin', 'Open+Sans:400italic,400,300,700:latin' ] }
