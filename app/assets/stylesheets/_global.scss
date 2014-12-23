@@ -54,9 +54,11 @@ a {
 	padding: 2px 4px;
 	text-decoration: none;
 	}
-	a:hover {
-		background: $links;
-		color: $text;
+	@include media( $laptop ) {
+		a:hover {
+			background: $links;
+			color: $text;
+		}
 	}
 	a:active {
 		background: $headers;

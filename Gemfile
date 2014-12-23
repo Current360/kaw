@@ -22,6 +22,10 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+
+# USING TO FIRE THE PAGE RELOAD SO OFF_CANVAS WORKS
+gem 'jquery-turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -45,7 +49,7 @@ gem 'capistrano-rails', group: :development
 # LAYOUT RELATED GEMS
 gem 'bourbon'
 gem 'neat'
-
+gem 'modernizr-rails'
 
 # Instagram Feed
 gem 'instagram'

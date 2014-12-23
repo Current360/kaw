@@ -1,23 +1,27 @@
 <header id="top" role="banner">
-    <%= link_to('Current360', root_path, :class => 'mobile-header-logo') %>
-    <a href="#nav" id="toggle">Menu<span class="arrow"></span></a>
+    <div class="block">
+        <%# link_to('Current360', root_path, :class => 'mobile-header-logo') %>
+        <figure class="mobile-header-logo"></figure>
+        <a class="nav-btn" id="nav-open-btn" href="#nav">Menu<span class="arrow"></span></a>
+    </div>
 </header>
+
 <nav id="nav" role="navigation">
+    <div class="block">
+        <a class="close-btn" id="nav-close-btn" href="#top">Close<span class="arrow"></span></a>
 
-    <a href="#" id="close">Close<span class="arrow"></span></a>
+        <ul class="no-disc">
+            <li><%= link_to 'Home', root_path, :class => 'home-link' %></li>
+            <li><%= link_to 'Work', work_path %></li>
+            <li><%= link_to 'Blog', blogs_path %></li>
+            <li><%= link_to 'Culture', culture_path %></a></li>
+        </ul>
 
-    <ul class="no-disc">
-        <li><%= link_to 'Home', root_path, :class => 'home-link' %></li>
-        <li><%= link_to 'Work', work_path %></li>
-        <li><%= link_to 'Blog', blogs_path %></li>
-        <li><%= link_to 'Culture', culture_path %></a></li>
-    </ul>
+        <form action="" class="search">
+            <input type="text">
+            <input type="submit" value="Search Current360">
+        </form>
 
-    <form action="" class="search">
-        <input type="text">
-        <input type="submit" value="Search Current360">
-    </form>
-
-    <%= link_to 'Contact', contact_path, :class => "contact-link" %>
-
+        <%= link_to 'Contact', contact_path, :class => "contact-link" %>
+    </div>
 </nav>

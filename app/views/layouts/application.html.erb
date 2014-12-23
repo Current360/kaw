@@ -15,19 +15,20 @@
            wf.async = 'true';
            var s = document.getElementsByTagName('script')[0];
            s.parentNode.insertBefore(wf, s);
-         })(); </script>
+         })();
+  </script>
+  <%= javascript_include_tag :modernizr %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= controller.controller_name %>">
-    <div class="outer-wrapper">
-        <div class="inner-wrapper">
+    <div id="outer-wrap">
+        <div id="inner-wrap">
             <%= render 'layouts/header' %>
             <%= yield %>
             <%= render 'layouts/footer' %>
         </div>
     </div>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
