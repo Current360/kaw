@@ -15,9 +15,26 @@ footer {
 
   section {
     @include outer-container;
-    // @include media($tablet1024) {
-    //   padding: 4em 6em 0 6em;
-    // }
+    .locations {
+      // TABLET STYLING
+      @include media($tablet) {
+        @include row();
+
+        article {
+          @include span-columns(6);
+        }
+      }
+      // LAPTOP STYLING
+
+      @include media($laptop) {
+        @include span-columns(6);
+      }
+    }
+    aside {
+      @include media($laptop) {
+        @include span-columns(6);
+      }
+    }
   }
 
   article {
